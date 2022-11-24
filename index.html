@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>DAIICT Workshop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --da-header: rgba(114, 159, 212, 0.75);
+            --da-footer: #2E294E;
+            --da-footer-main: rgba(5, 9, 19, 1);
+            --da-footer-dim: rgba(5, 9, 19, 0.96);
+            --da-hero-section-color: white;
+        }
+
+        .card {
+            border-radius: 0;
+            border: 0;
+        }
+
+        .hero-div {
+            background-color: #0C1A31;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 800px;
+        }
+        .dark-stuff{
+            background-color: #0C1A31;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 px-5" style="background-color: #0C1A31;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <h4 style="font-family: var(--bs-font-sans-serif);">कार्यशाला</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./committees.html">Committe Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./invited_speaker.html">Invited Speakers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Venue
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./venue.html">About DAIICT</a></li>
+                            <li><a class="dropdown-item" href="./gandhinagar.html">About Gandhinagar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./schedule.html">Schedule</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid hero-div" id="particles-js" style="font-size: larger; line-height: 3rem; ">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-12 col-md-10">
+                <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                    <h2 class="card-title fw-bold" style="color: var(--da-hero-section-color);">High End Workshop
+                        <br>
+                        <small>on</small>
+                        <br>
+                        Hardware Assisted Security for Fog Computing based IoT Networks</h2>
+                        <p class="card-text fw-bold" style="color: var(--da-hero-section-color);">
+                        <h5 style="color: rgb(117, 237, 18); text-decoration: underline;">Under the KARYASHALA Scheme –
+                            A SERB initiative</h5>
+                        </p>
+                        <p class="card-text fw-bold" style="color: var(--da-hero-section-color);">
+                            <big>11<sup>th</sup> – 17<sup>th</sup> July 2022</big>
+                        </p>
+                        <p class="card-text fw-lighter" style="color: var(--da-hero-section-color);">
+                            <big>Funded by: Science and Engineering Research Board (SERB), <br> Department of Science
+                                and Technology, Government of India, under the Accelerate Vigyan Scheme.</big>
+                        </p>
+                        <p class="card-text fw-lighter mt-5px" style="color: var(--da-hero-section-color);">
+                            <big>Organized by: Dhirubhai Ambani Institute of Information and Communication
+                                Technology.</big>
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    </div>
+    <div id="workshop-schedule" class="mx-3 my-5 card text-center">
+        <div class="card-header py-3">
+            <h3>Workshop Schedule</h3>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">Important Dates</h4>
+            <h6 class="card-text py-1">Registration Opens: 06<sup>th</sup> June 2022</h6>
+            <h6 class="card-text py-1">Last date for Application: 01<sup>st</sup> July 2022</h6>
+            <h6 class="card-text py-1">Display of shortlisted candidates: 02<sup>nd</sup> July 2022</h6>
+            <h6 class="card-text py-1">Workshop Dates: 11<sup>th</sup> July 2022</h6>
+        </div>
+        <div class="card-footer py-3">
+            <button class="btn btn-secondary py-3 px-4 fs-6" data-bs-toggle="modal" data-bs-target="#registermodal"
+                style="background-color: #2E294E;">Register Now</button>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+    <div class="container-fluid p-5 my-5" style="background-color: #EFF1FB;">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-12 col-md-10">
+                <h5 class="fs-4">कार्यशाला (High - End Workshops) Objectives:</h5>
+                <p style="text-align: justify;" class="fs-5">'KARYASHALA' is a noble endeavor of Government of India by Science and
+                    Engineering Board (SERB) under Accelerate Vigyan Scheme to improve research productivity of
+                    promising PG and PhD students from universities and colleges through high-end workshops on specific
+                    themes. This program aims to provide opportunities to acquire specialized research skills. These
+                    workshops will primarily be facilitated at organizations / institutions / laboratories of national
+                    importance. DA-IICT Gandhinagar has decided to be a part of this unique initiative and share our
+                    Institutional resources with the society towards higher goals of national importance. Thus, the
+                    current workshop has come into being. This event is sponsored by SERB.</p>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+    <div class="container-fluid p-5 mb-5"">
+        <div class=" row">
+        <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+            <h3 class="mb-5">Sponsored By:</h3>
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                <img class="img-fluid mx-1" src="./images/sponsor1.png" style="height:150px;" />
+
+                <img class="img-fluid mx-1" src="./images/sponsor2.png" style="height:150px;" />
+                <img class="img-fluid mx-1" src="./images/sponsor3.png" style="height:150px;" />
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    </div>
+    
+    <div class="container py-4">
+    
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-6 fw-bold">About the Workshop</h1>
+            <p class="col-md-12 fs-5">‘KARYASHALA’ is an effort to improve research productivity of promising PG and PhD students from universities and colleges through high-end workshops on specific themes. This program aims to provide opportunities to acquire specialized research skills. Following are the objectives of the current high end workshop :</p>
+          </div>
+          <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <img src="./circuit.png" alt="" height="42" width="42">
+              </div>
+              <div>
+                <p class="fs-5">Provide an understanding of the fundamentals of Hardware Security.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <img src="./circuit.png" alt="" height="42" width="42">
+              </div>
+              <div>
+                <p class="fs-5">Impart knowledge about basics of IoT and Fog Computing along with security issues in the IoT
+                  paradigm.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                  <img src="./circuit.png" alt="" height="42" width="42">
+              </div>
+              <div>
+                <p class="fs-5">Enable participants to gain insight into various aspects of Hardware Security like Hardware
+                  Trojan
+                  Detection, Prevention and Logic Locking.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="./circuit.png" alt="" height="42" width="42">
+              </div>
+              <div>
+                <p class="fs-5">Familiarize participants with concepts of Hardware Security Modules and Physically Unclonable
+                  Functions in IoT applications.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <img src="./circuit.png" alt="" height="42" width="42">
+              </div>
+              <div>
+                <p class="fs-5">Provide hands on training for circuit simulation and implementation on FPGA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white rounded-3 dark-stuff">
+              <h2>Who Can Attend</h2>
+              <p class="fs-5">Karyashala is open to postgraduate students/research scholars from all Institutes, Colleges and Universities. Preference will be given to the students having interest towards VLSI, Embedded Systems, Computer Architecture, Hardware Security, Cloud/Fog Computing, HDL – Verilog, FPGA implementation. Total number of seats is limited to 25. The selected candidates will be provided with support in the form of Travel (3AC), stationery, consumables, accommodation, food etc, as per institute norms. The applicants have to submit the NOC (Download Format Link) from the supervisor/HoD/Head of the institute. There is no registration fees.</p>
+              <button class="btn btn-primary fs-5" type="button">View Schedule</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 p-5 bg-light border rounded-3">
+              <h2>About Gandhinagar</h2>
+              <p class="fs-5">With the tag of the cleanest city in Asia, Gandhinagar is the administrative capital of the state of Gujarat, located on the western bank of Sabarmati river. Named after the father of Nation, Mahatma Gandhi, Gandhinagar is the second planned city of India, after Chandigarh. The city is divided into thirty organised sectors, each of them is pedestrian friendly and self-contained. It's more of a people-oriented city, with all the parks, monuments, gardens and grand civic buildings. During Winter season, i.e., when the conference is scheduled, it is good sunny climate with temperature ranging between 20 to 30 °C.</p>
+              
+            <button class="btn btn-outline-success fs-5" type="button">Explore Gandhinagar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer class="text-center text-white mt-5" style="background-color: var(--da-footer-dim);">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h6>Event Organizer:</h6>
+                    <p>Dr. Yash Agrawal (Assistant Professor)</p>
+                    <p><a style="color: white;" href="mailto:yash_agrawal@daiict.ac.in">yash_agrawal@daiict.ac.in</a>
+                    </p>
+                    <p>(+91-98821 14669)</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h6>Event Co-Organizer:</h6>
+                    <p>Dr. Sreeja Rajendran (Assistant Professor)</p>
+                    <p><a style="color: white;"
+                            href="mailto:sreeja_rajendran@daiict.ac.in">sreeja_rajendran@daiict.ac.in</a></p>
+                    <p>(+91-90747 03191)</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: var(--da-footer-main);">
+            <a class="text-white" href="./index.html">कार्यशाला</a>
+            | Designed By Students of DAIICT - M.Sc IT Branch
+        </div>
+    </footer>
+    <div class="modal fade" id="registermodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Register for Workshop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body my-3">
+                    <h6>Scan the QR-Code below:</h6>
+                    <div class="row my-3">
+                        <div class="col-12 p-4 text-center">
+                            <img class="img-fluid" src="./images/qr.png" />
+                        </div>
+                    </div>
+                    <h6>Or Register using link below:</h6>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a href="#" target="_blank">Click Here to Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

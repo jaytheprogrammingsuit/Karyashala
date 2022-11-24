@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <title>Venue</title>
+  <style>
+    header {
+      position: relative;
+      background-color: black;
+      height: 75vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+      background: url('./daiict.jpg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    :root {
+            --da-header: rgba(114, 159, 212, 0.75);
+            --da-footer: #2E294E;
+            --da-footer-main: rgba(5, 9, 19, 1);
+            --da-footer-dim: rgba(5, 9, 19, 0.96);
+            --da-hero-section-color: white;
+        }
+
+
+    header video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    header .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.4;
+      z-index: 1;
+    }
+
+    /* Media Query for devices withi coarse pointers and no hover functionality */
+
+    /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+    @media (pointer: coarse) and (hover: none) {
+
+
+      header video {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0C1A31;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <h4 style="font-family: var(--bs-font-sans-serif);">कार्यशाला</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./committees.html">Committe Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./invited_speaker.html">Invited Speakers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Venue
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./venue.html">About Daiict</a></li>
+              <li><a class="dropdown-item" href="./gandhinagar.html">About gandhinagar</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./schedule.html">Schedule</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
+
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Dhirubhai Ambani Institute of Information Technology</h1>
+          <p class="lead mb-0 mt-5">
+            DAIICT, Near Indroda Circle, Gandhinagar,Gujarat (India), 382 007
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page section example for content below the video header -->
+  <section class="my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+
+          <h1 class="text-center">
+            Venue
+          </h1>
+          
+          <div class="container d-flex gap-3 flex-row justify-content-evenly row align-items-center">
+            <div class="container text-center col justify-content-center align-items-center">
+              <p class="text-start mx-auto fs-5">
+                High End Workshop on Hardware Assisted Security for Fog Computing based IoT Networks will be held at
+                Dhirubhai Ambani Institute of Information and Communication Technology, Gandhinagar, Gujarat, India.
+              </p>
+            </div>
+            <div class="container text-center col">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14669.989595290104!2d72.6289155!3d23.188537!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc54de484f986b1fa!2sDA-IICT!5e0!3m2!1sen!2sin!4v1654318916370!5m2!1sen!2sin" width="400rem" height="300rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <h1 class="text-center mt-5">
+            About DAIICT
+          </h1>
+          <p class="text-center fs-5">
+            DA-IICT is a university devoted to the field of Information and Communication Technology (ICT). The
+            institute is spread over 50 acres of land in Gandhinagar, capital city of Gujarat and has lush green campus.
+            Established in 2000 by the Reliance Group, DA-IICT is consistently ranked as one of the top
+            technological institutes in the country. DA-IICT has been accredited with ‘A’ grade by NAAC and
+            ‘Centre of Excellence’ by Government of Gujarat. The institute has established several research
+            collaborations with different universities, government organizations, research labs, industries both in
+            India
+            and abroad. The students along with the faculties publish their research articles in several
+            national/international Book Chapters, Journals and Conferences of repute. The institute has state-of-the-
+            art research labs and super-computing facilities. The students organize several technical, cultural and
+            sports events throughout the year. The institute possesses vast well-established alumni group. For more
+            details, please visit https://www.daiict.ac.in/
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-light" style="background-color: var(--da-footer-dim);">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h6>Event Organizer:</h6>
+                <p>Dr. Yash Agrawal (Assistant Professor)</p>
+                <p><a style="color: white;" href="mailto:yash_agrawal@daiict.ac.in">yash_agrawal@daiict.ac.in</a>
+                </p>
+                <p>(+91-98821 14669)</p>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h6>Event Co-Organizer:</h6>
+                <p>Dr. Sreeja Rajendran (Assistant Professor)</p>
+                <p><a style="color: white;"
+                        href="mailto:sreeja_rajendran@daiict.ac.in">sreeja_rajendran@daiict.ac.in</a></p>
+                <p>(+91-90747 03191)</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: var(--da-footer-main);">
+        <a class="text-white" href="./index.html">कार्यशाला</a>
+        | Designed By Students of DAIICT - M.Sc IT Branch
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

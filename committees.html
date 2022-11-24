@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committees</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&family=Roboto+Slab:wght@100;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        :root {
+            --da-header: rgba(114, 159, 212, 0.75);
+            --da-footer: #2E294E;
+            --da-footer-main: rgba(5, 9, 19, 1);
+            --da-footer-dim: rgba(5, 9, 19, 0.96);
+        }
+
+        .card {
+            border-radius: 0;
+            border: 0;
+        }
+
+        #members a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #members a:hover {
+            color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0C1A31;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <h4 style="font-family: var(--bs-font-sans-serif);">कार्यशाला</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./committees.html">Committe Members</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./invited_speaker.html">Invited Speakers</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Venue
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./venue.html">About Daiict</a></li>
+                            <li><a class="dropdown-item" href="./gandhinagar.html">About gandhinagar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./schedule.html">Schedule</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container my-3" id="members">
+
+        <h3 class="shadow-sm p-3 mb-5 bg-body rounded">Director</h3>
+        <div class="container d-flex gap-3 flex-row justify-content-evenly row">
+            <div class="card col-6 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+                <img src="./images/ksd_committee.jpg" class="card-img-top" alt="K S Dasgupta">
+                <div class="card-body">
+                    <a href="https://www.daiict.ac.in/faculty-details/251">
+                        <h5 class="card-title">Dr. K S Dasgupta</h5>
+                    </a>
+                    <p class="card-text"><small class="text-muted">Director</small></p>
+                    <p class="card-text">PhD (Engineering), IIT Bombay</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-left shadow-sm p-3 mb-5 bg-body rounded">Event Organizer</h3>
+        <div class="container d-flex gap-3 flex-row justify-content-evenly row">
+            <div class="card col-6 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+                <img src="./images/ya_committee.jpg" class="card-img-top" alt="Yash Agrawal">
+                <div class="card-body">
+                    <a href="https://www.daiict.ac.in/faculty-details/287">
+                        <h5 class="card-title">Dr. Yash Agrawal (Assistant Professor)</h5>
+                    </a>
+                    <p class="card-text"><small class="text-muted">Event Organizer</small></p>
+                    <p class="card-text">PhD (Electronics & Communication), NIT Hamirpur</p>
+                </div>
+            </div>
+
+            <div class="card col-6 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+                <img src="./images/sr_committee.jpg" class="card-img-top" alt="Sreeja Rajendran">
+                <div class="card-body">
+                    <a href="https://www.daiict.ac.in/faculty-details/3695">
+                        <h5 class="card-title">Dr. Sreeja Rajendran (Assistant Professor)</h5>
+                    </a>
+                    <p class="card-text"><small class="text-muted">Event Co-Organizer</small></p>
+                    <p class="card-text">PhD (Electrical and Electronics Engineering), Birla Institute of Technology and
+                        Science, Pilani, Dubai Campus</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-left shadow-sm p-3 mb-5 bg-body rounded">Local Organizer</h3>
+        <div class="container d-flex gap-3 flex-row justify-content-evenly row">
+
+            <div class="card col-6 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+                <img src="./images/st_committee.jpg" class="card-img-top" alt="Saurabh Tiwari">
+                <div class="card-body">
+                    <a href="https://www.daiict.ac.in/faculty-details/276">
+                        <h5 class="card-title">Dr. Saurabh Tiwari</h5>
+                    </a>
+                    <p class="card-text"><small class="text-muted">Local Organizer</small></p>
+                    <p class="card-text">PhD (Computer Science & Engineering), IIITDM, Jabalpur</p>
+                </div>
+            </div>
+
+            <div class="card col-6 shadow p-3 mb-5 bg-body rounded" style="width: 20rem;">
+                <img src="./images/mk_committee.jpg" class="card-img-top" alt="Manish Khare">
+                <div class="card-body">
+                    <a href="https://www.daiict.ac.in/faculty-details/256">
+                        <h5 class="card-title">Dr. Manish Khare</h5>
+                    </a>
+                    <p class="card-text"><small class="text-muted">Local Organizer</small></p>
+                    <p class="card-text">PhD (Computer Science), University of Allahabad</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="text-center text-white" style="background-color: var(--da-footer-dim);">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h6>Event Organizer:</h6>
+                    <p>Dr. Yash Agrawal (Assistant Professor)</p>
+                    <p><a style="color: white;" href="mailto:yash_agrawal@daiict.ac.in">yash_agrawal@daiict.ac.in</a>
+                    </p>
+                    <p>(+91-98821 14669)</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h6>Event Co-Organizer:</h6>
+                    <p>Dr. Sreeja Rajendran (Assistant Professor)</p>
+                    <p><a style="color: white;"
+                            href="mailto:sreeja_rajendran@daiict.ac.in">sreeja_rajendran@daiict.ac.in</a></p>
+                    <p>(+91-90747 03191)</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: var(--da-footer-main);">
+            <a class="text-white" href="./index.html">कार्यशाला</a>
+            | Designed By Students of DAIICT - M.Sc IT Branch
+        </div>
+    </footer>
+</body>
+
+</html>
